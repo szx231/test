@@ -17,11 +17,11 @@ function App() {
   };
 
   return (
-    <>
+    <div>
       <button onClick={fetchData}>Fetch Data</button>
       {data.length > 0 && data.map((el) => <div style={{ color: 'red' }}>{el}</div>)}
       <button onClick={reset}>Clear</button>
-    </>
+    </div>
   );
 }
 
